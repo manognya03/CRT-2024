@@ -1,0 +1,40 @@
+program:
+Write a program to return the nearest 10 multiple of any given number
+
+Input Format
+Read a number
+
+Constraints
+1<=n<=10^7
+
+Output Format
+Print nearest 10 multiple no
+
+Sample Input 0
+18
+Sample Output 0
+20
+
+source code:
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+   int a,x;
+    scanf("%d",&a);
+    int d=a%10;
+   if(d<5){
+     
+     x=a-d;
+       printf("%d",x);
+   }
+    else{
+        x=a+(10-d);
+        printf("%d",x);
+    }
+    
+    return 0;
+}
