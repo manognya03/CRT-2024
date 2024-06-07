@@ -1,0 +1,15 @@
+probrlm:
+print numbers from 1 to 10
+
+source code
+#include <stdio.h>
+
+int main() {
+    int n=1;
+    while(n<11)
+    {
+        printf("%d ",n);
+        n++;
+    }
+    return 0;
+}
