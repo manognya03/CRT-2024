@@ -1,0 +1,27 @@
+problem:
+read a number and print sum of even and odd numbers
+
+source code:
+#include <stdio.h>
+
+int main() 
+{
+    int n,even=0,odd=0,x;
+    scanf("%d",&n);
+    while(n>0){
+       x=n%10;
+       if(n%2==0)
+        {
+           even=even+x; 
+        }
+        else
+        {
+            odd=odd+x;
+        }
+         n=n/10;
+    }
+    printf("%d %d",even,odd);
+    
+    return 0;
+}
+    
